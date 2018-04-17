@@ -88,7 +88,9 @@
         <div class="col">
 
           <div class="main_nav_content d-flex flex-row">
+
             <!-- Categories Menu -->
+
             <div class="cat_menu_container">
               <div class="cat_menu_title d-flex flex-row align-items-center justify-content-start">
                 <div class="cat_burger"><span></span><span></span><span></span></div>
@@ -104,18 +106,63 @@
             </div>
 
             <!-- Main Nav Menu -->
+
             <div class="main_nav_menu ml-auto">
               <ul class="standard_dropdown main_nav_dropdown">
-                <li><a href="#">Inicio<i class="fas fa-chevron-down"></i></a></li>
-                <li><a href="#">Nosotros<i class="fas fa-chevron-down"></i></a></li>
-                <li><a href="#">Catálogo<i class="fas fa-chevron-down"></i></a></li>
-                <li><a href="#">Marcas<i class="fas fa-chevron-down"></i></a></li>
-                <li><a href="#">Contacto<i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="">Inicio<i class="fas fa-chevron-down"></i></a></li>
+                <li><a [routerLink]="['/about']">Nosotros<i class="fas fa-chevron-down"></i></a></li>
+                <li><a [routerLink]="['/catalog']">Catálogo<i class="fas fa-chevron-down"></i></a></li>
+                <li><a [routerLink]="['/brands']">Marcas<i class="fas fa-chevron-down"></i></a></li>
+                <li><a [routerLink]="['/contact']">Contacto<i class="fas fa-chevron-down"></i></a></li>
               </ul>
             </div>
+
+            <!-- Menu Trigger -->
+
+            <div class="menu_trigger_container ml-auto">
+              <div class="menu_trigger d-flex flex-row align-items-center justify-content-end">
+                <div class="menu_burger">
+                  <div class="menu_trigger_text">menu</div>
+                  <div class="cat_burger menu_burger_inner"><span></span><span></span><span></span></div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
   </nav>
+
+  <!-- Menu -->
+  <div class="page_menu">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+
+          <div class="page_menu_content">
+
+            <div class="page_menu_search">
+              <form action="#">
+                <input type="search" required="required" class="page_menu_search_input" placeholder="¿Qué estás buscando?">
+              </form>
+            </div>
+            <ul class="page_menu_nav">
+              <li class="page_menu_item"><a href="#">Inicio<i class="fa fa-angle-down"></i></a></li>
+              <li class="page_menu_item"><a href="#">Nosotros<i class="fa fa-angle-down"></i></a></li>
+              <li class="page_menu_item"><a href="#">Catálogo<i class="fa fa-angle-down"></i></a></li>
+              <li class="page_menu_item"><a href="#">Marcas<i class="fa fa-angle-down"></i></a></li>
+              <li class="page_menu_item"><a href="#">Contacto<i class="fa fa-angle-down"></i></a></li>
+            </ul>
+
+            <div class="menu_contact">
+              <div class="menu_contact_item"><div class="menu_contact_icon"><img src="assets/images/phone_white.png" alt=""></div>+01 338 005 3570</div>
+              <div class="menu_contact_item"><div class="menu_contact_icon"><img src="assets/images/mail_white.png" alt=""></div><a href="mailto:hemel@gmail.com">hemel@gmail.com</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </header>

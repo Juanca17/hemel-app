@@ -2233,7 +2233,7 @@ select option
 }
 .arrivals_slider_item
 {
-	visibility: visible;
+	visibility: hidden;
 	height: 263px;
 	width: 25%;
 }
